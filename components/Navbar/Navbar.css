@@ -1,0 +1,42 @@
+@import '../index.css';
+
+.nav-wrap {
+	margin: 30px;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 15px 40px;
+	background: #92ad94;
+	/*background: linear-gradient(to top, transparent, #92ad94);*/
+}
+
+header .logo {
+	font-size: 28px;
+	font-weight: 700;
+	color: #fff;
+	float: left;
+}
+
+header .menu {
+	float: right;
+	margin-top: 5px;
+	/*margin: 30px;*/
+}
+
+header ul li {
+	display: inline-block;
+}
+
+header ul li a.nav-link {
+	text-decoration: none;
+	font-size: 16px;
+	color: #fff;
+	margin: 0 25px;
+	font-weight: 300;
+	letter-spacing: 1px;
+
+}

@@ -1,0 +1,1 @@
+<?php $kantorDesaN1 = ""; $kecamatanN1 = ""; $kotaN1 = ""; $namaN1 = ""; $genderN1 = ""; $ttlN1 = ""; $wargaNegaraN1 = ""; $agamaN1 = ""; $pekerjaanN1 = ""; $tempatTinggalN1 = ""; $nasabN1 = ""; $statusN1 = ""; $namaPasanganLamaN1 = "";
