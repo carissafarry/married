@@ -1,14 +1,23 @@
-<div class="nav-wrap">
-    <header>
-        <div class="logo">MARRIED</div>
-        <div class="menu">
-            <ul>
-                <li><a href="#" class="nav-link">Home</a></li>
-                <li><a href="#" class="nav-link">Services</a></li>
-                <li><a href="#" class="nav-link">About</a></li>
-                <li><a href="#" class="nav-link">Partner</a></li>
-                <li><a href="../Logout.php" class="nav-link">Logout</a></li>
+<header class="l-headerBgColor l-header">
+    <nav class="nav bd-grid">
+        <div>
+            <a href="<?= $goToHomeDir ?>" class="nav__logo">Married</a>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+            <div class="nav__close" id="nav-close">
+                <i class='bx bx-x'></i>
+            </div>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="" class="nav__link">Services</a></li>
+                <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
             </ul>
         </div>
-    </header>
-</div>
+    </nav>
+</header>
+<script src="./Navbar.js"></script>

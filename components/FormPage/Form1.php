@@ -4,6 +4,7 @@ if (!isset($_SESSION["user"])) {
     header("Location: ../LoginPage/Login.php");
     exit;
 }
+$goToHomeDir = '../../';
 ?>
 
 <!DOCTYPE html>
@@ -14,8 +15,7 @@ if (!isset($_SESSION["user"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="./Form.css">
-    <link rel="stylesheet" href="../Navbar/Navbar.css">
-    <title>Document</title>
+    <title>Form Model N1</title>
 </head>
 
 <body>

@@ -5,6 +5,7 @@ if (!isset($_SESSION["user"])) {
     exit;
 }
 require_once '../userData/' . $_SESSION["user"] . '.php';
+$goToHomeDir = '../../';
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +17,7 @@ require_once '../userData/' . $_SESSION["user"] . '.php';
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="./Form.css">
     <link rel="stylesheet" href="../Navbar/Navbar.css">
-    <title>Document</title>
+    <title>Form Model N3</title>
 </head>
 
 <body>

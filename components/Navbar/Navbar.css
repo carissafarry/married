@@ -1,42 +1,112 @@
-@import '../index.css';
-
-.nav-wrap {
-	margin: 30px;
+/* == BASE CSS SETTINGS == */
+h1,
+p,
+ul {
+    margin: 0;
 }
 
-header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	padding: 15px 40px;
-	background: #92ad94;
-	/*background: linear-gradient(to top, transparent, #92ad94);*/
+ul {
+    padding: 0;
+    list-style: none;
 }
 
-header .logo {
-	font-size: 28px;
-	font-weight: 700;
-	color: #fff;
-	float: left;
+a {
+    text-decoration: none;
 }
 
-header .menu {
-	float: right;
-	margin-top: 5px;
-	/*margin: 30px;*/
+/* == LAYOUT == */
+.bd-grid {
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 2rem;
+    width: calc(100% - 2rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
-header ul li {
-	display: inline-block;
+.l-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
 }
 
-header ul li a.nav-link {
-	text-decoration: none;
-	font-size: 16px;
-	color: #fff;
-	margin: 0 25px;
-	font-weight: 300;
-	letter-spacing: 1px;
+/* == NAV == */
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+@media screen and (max-width: 768px) {
+    .nav__menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100%;
+        padding: 3.5rem 1.5rem 0;
+        background: rgba(255, 255, 255, .3);
+        backdrop-filter: blur(10px);
+        transition: .4s;
+    }
+}
+
+.nav__close {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav__item {
+    margin-bottom: 2rem;
+}
+
+/* .nav__close,
+.nav__link,
+.nav__logo,
+.nav__toggle {
+    color: #1f2338;
+}
+
+.nav__link:hover {
+    color: #89c49f;
+} */
+
+.nav__toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* == MEDIA QUERIES == */
+@media screen and (min-width: 768px) {
+    .nav {
+        height: calc(var(--header-height) + 1.5rem);
+    }
+
+    .nav__toggle,
+    .nav__close {
+        display: none;
+    }
+
+    .nav__list {
+        display: flex;
+    }
+
+    .nav__item {
+        margin-left: 3rem;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .bd-grid {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

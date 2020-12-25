@@ -1,5 +1,6 @@
 /* == GOOGLE FONTS == */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import './components/Navbar/Navbar.css';
 
 /* == CSS VARIABLE == */
 :root {
@@ -40,7 +41,7 @@ body {
     font-weight: 500;
 }
 
-h1,
+/* h1,
 p,
 ul {
     margin: 0;
@@ -53,7 +54,7 @@ ul {
 
 a {
     text-decoration: none;
-}
+} */
 
 img {
     max-width: 100%;
@@ -61,7 +62,7 @@ img {
 }
 
 /* == LAYOUT == */
-.bd-grid {
+/* .bd-grid {
     max-width: 1024px;
     display: grid;
     grid-template-columns: 100%;
@@ -78,10 +79,14 @@ img {
     left: 0;
     z-index: var(--z-fixed);
     background-color: transparent;
+} */
+
+.l-headerBgColor {
+    background-color: transparent;
 }
 
 /* == NAV == */
-.nav {
+/* .nav {
     height: var(--header-height);
     display: flex;
     justify-content: space-between;
@@ -113,12 +118,12 @@ img {
 .nav__item {
     margin-bottom: 2rem;
 }
+*/
 
 .nav__close,
 .nav__link,
 .nav__logo,
 .nav__toggle {
-    /* color: var(--white-color); */
     color: #1f2338;
 }
 
@@ -126,10 +131,11 @@ img {
     color: #89c49f;
 }
 
+/*
 .nav__toggle {
     font-size: 1.5rem;
     cursor: pointer;
-}
+} */
 
 /* == SHOW MENU == */
 .show {
@@ -196,7 +202,7 @@ img {
         margin: 0;
     }
 
-    .nav {
+    /* .nav {
         height: calc(var(--header-height) + 1.5rem);
     }
 
@@ -212,7 +218,7 @@ img {
     .nav__item {
         margin-left: 3rem;
         margin-bottom: 0;
-    }
+    } */
 
     .home__container {
         height: 100vh;
@@ -235,10 +241,10 @@ img {
 }
 
 @media screen and (min-width:1024px) {
-    .bd-grid {
+    /* .bd-grid {
         margin-left: auto;
         margin-right: auto;
-    }
+    } */
 
     .home__container {
         justify-content: initial;
