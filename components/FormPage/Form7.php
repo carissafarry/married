@@ -30,7 +30,7 @@ $goToHomeDir = '../../';
     <?php include '../Navbar/Navbar.php'; ?>
     <div class="form1-container">
         <div class="title-form">
-            <h1>Formulir Keterangan untuk Nikah (Model N1)</h1>
+            <h1>Formulir Model N7</h1>
         </div>
         <form action="../FormPage/recipients/formN7.php" method="POST">
             <input type="hidden" name="fileName" value="<?= $_SESSION["user"] ?>">
