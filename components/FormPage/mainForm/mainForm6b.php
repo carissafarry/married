@@ -1,4 +1,3 @@
-            <form>
                 <div class="form-input">
                     <label for="" class="form-label">Nama lengkap dan alias</label>
                     <div class="input-form-container">

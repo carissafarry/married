@@ -1,6 +1,4 @@
         <div class="title-main-form">FORMULIR</div>
-        <input type="hidden" name="fileName" value="heallo">
-        <input type="hidden" name="nextForm" value="Form2.php">
         <div class=" form-input">
             <label for="" class="form-label">Nama lengkap dan alias</label>
             <div class="input-form-container">

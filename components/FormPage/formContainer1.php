@@ -1,5 +1,4 @@
 <div class="form-container">
-    <!-- <form> -->
     <div class="form-input kantor">
         <label for="" class="form-label">Kantor Desa / Kelurahan</label>
         <div class="input-form-container">
@@ -21,5 +20,4 @@
             <input type="text" class="input-form" name="kotaN1">
         </div>
     </div>
-    <!-- </form> -->
 </div>

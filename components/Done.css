@@ -1,0 +1,70 @@
+@import './index.css';
+
+body {
+    background-image: url('../img/done.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -28vh;
+}
+
+.done-container {
+    text-align: center;
+    padding: 0px 23vw;
+    margin: 21vh 0vw;
+}
+
+.main-done {
+    padding: 50px 40px 40px 50px;
+    position: absolute;
+    background: rgba(105, 105, 104, 0.534);
+    color: #fff;
+    border-radius: 10px;
+    animation-name: main-done;
+    animation-duration: 2s;
+    box-shadow: 3px 3px 5px #4d524dda;
+}
+
+@keyframes main-done {
+    from {
+        margin-top: -28px;
+    }
+
+    to {
+        margin-top: 0px;
+    }
+}
+
+.backBtn {
+    color: #474c52;
+    background: #ffffff;
+}
+
+h1.caption {
+    margin-top: 20px;
+}
+
+a.backBtn {
+    border-radius: 10px;
+    white-space: nowrap;
+    border: none;
+    cursor: pointer;
+    padding: 12px 15px;
+    font-size: 18px;
+    position: relative;
+    box-shadow: 3px 3px 5px #4d524dda;
+    margin: 10px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+a:hover.backBtn {
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    background: #474c52;
+    color: #fff;
+}
+
+.logout-btn {
+    padding: 40px;
+}

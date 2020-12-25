@@ -1,4 +1,3 @@
-            <!-- <form> -->
             <div class="form-input">
                 <label for="" class="form-label">Nama lengkap dan alias</label>
                 <div class="input-form-container">
@@ -6,13 +5,6 @@
                     <input type="text" class="input-form" name="namaN2b" value="<?= $namaN1 ?>" readonly>
                 </div>
             </div>
-            <!-- <div class="form-input">
-                <label for="" class="form-label">Jenis kelamin</label>
-                <div class="input-form-container">
-                    <p>:</p>
-                    <input type="text" class="input-form" name="genderN2b" value="<?= $genderN1 ?>" readonly>
-                </div>
-            </div> -->
             <div class="form-input">
                 <label for="" class="form-label">Tempat tanggal lahir</label>
                 <div class="input-form-container">

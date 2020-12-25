@@ -1,6 +1,10 @@
 <?php
-require_once '../functions.php';
-require_once './var/html/heallo.php';
+session_start();
+if (!isset($_SESSION["user"])) {
+    header("Location: ../LoginPage/Login.php");
+    exit;
+}
+require_once '../userData/' . $_SESSION["user"] . '.php';
 ?>
 
 <!DOCTYPE html>
@@ -25,7 +29,7 @@ require_once './var/html/heallo.php';
         <div class="note">Yang bertanda tangan di bawah ini menerangkan dengan sesungguhnya bahwa:</div>
 
         <form action="../FormPage/recipients/formN3.php" method="POST">
-            <input type="hidden" name="fileName" value="heallo">
+            <input type="hidden" name="fileName" value="<?= $_SESSION["user"] ?>">
             <input type="hidden" name="nextForm" value="Form4.php">
             <div class="main-form2-container">
                 <div class="main-form main-form2">
@@ -42,8 +46,6 @@ require_once './var/html/heallo.php';
             <div class="note confirmation-form3">
                 <p>Demikianlah, formulir ini dipenuhi dengan mengingat sumpah jabatan dan untuk digunakan seperlunya.</p>
             </div>
-
-            <!-- Form BTN Submit -->
             <div class="form3-btn">
                 <a class="backBtn" href="./Form2.php">Kembali</a>
                 <?php include './formBtn.php'; ?>

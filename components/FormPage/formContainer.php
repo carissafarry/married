@@ -1,12 +1,4 @@
-<?php
-$data = require_once './var/html/heallo.php';
-if (!empty($data)) {
-    require_once './var/html/heallo.php';
-}
-?>
-
 <div class="form-container">
-    <!-- <form> -->
     <div class="form-input kantor">
         <label for="" class="form-label">Kantor Desa / Kelurahan</label>
         <div class="input-form-container">
@@ -28,5 +20,4 @@ if (!empty($data)) {
             <input type="text" class="input-form" name="kotaN1" value="<?= $kotaN1 ?>">
         </div>
     </div>
-    <!-- </form> -->
 </div>

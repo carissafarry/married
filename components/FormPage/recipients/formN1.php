@@ -30,8 +30,8 @@ $text =
     $statusN1 . " " .
     $namaPasanganLamaN1;  // add all together 
 
-$filepath = fopen('../var/html/' . $fileName . '.php', 'w+'); // set filepath and fopen to new PHP-file
-fwrite($filepath, '<?php ' . $text); // write text as PHP-file
+$filepath = fopen('../../userData/' . $fileName . '.php', 'a'); // set filepath and fopen to new PHP-file
+fwrite($filepath, $text); // write text as PHP-file
 fclose($filepath); // close file
 
 header('Location: ../' . $nextForm);

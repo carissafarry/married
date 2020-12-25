@@ -1,6 +1,10 @@
 <?php
-require_once '../functions.php';
-
+session_start();
+if (!isset($_SESSION["user"])) {
+    header("Location: ../LoginPage/Login.php");
+    exit;
+}
+require_once '../userData/' . $_SESSION["user"] . '.php';
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +26,7 @@ require_once '../functions.php';
             <h1>Formulir Keterangan Asal Usul (Model N2)</h1>
         </div>
         <form action="../FormPage/recipients/formN2.php" method="POST">
-            <input type="hidden" name="fileName" value="heallo">
+            <input type="hidden" name="fileName" value="<?= $_SESSION["user"] ?>">
             <input type="hidden" name="nextForm" value="Form3.php">
             <?php include './formContainer.php'; ?>
             <div class="note">Yang bertanda tangan di bawah ini menerangkan dengan sesungguhnya bahwa:</div>
@@ -32,10 +36,8 @@ require_once '../functions.php';
                     <?php include './mainForm/mainForm2a.php'; ?>
                 </div>
                 <div class="main-form main-form2">
-                    <!-- <div class="title-main-form">FORMULIR 2</div> -->
                     <div class="note yellowBg" style="margin: 16px;">Adalah benar ayah kandung dan ibu kandung dari seorang:</div>
                     <?php include './mainForm/mainForm2b.php'; ?>
-                    <!-- Form BTN Submit -->
                     <div class="form2-btn">
                         <a class="backBtn" href="./Form1.php">Kembali</a>
                         <?php include './formBtn.php'; ?>

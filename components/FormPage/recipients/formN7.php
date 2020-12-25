@@ -4,6 +4,7 @@ $tglAwalNikahN7b = "\$tglAwalNikahN7b = " . '"' . $_POST["tglAwalNikahN7b"] . '"
 $tglAkhirNikahN7b = "\$tglAkhirNikahN7b = " . '"' . $_POST["tglAkhirNikahN7b"] . '"' . ";";
 $hariN7b = "\$hariN7b = " . '"' . $_POST["hariN7b"] . '"' . ";";
 $masKawinN7b = "\$masKawinN7b = " . '"' . $_POST["masKawinN7b"] . '"' . ";";
+$dibayarN7b = "\$dibayarN7b = " . '"' . $_POST["dibayarN7b"] . '"' . ";";
 $fileName = $_POST["fileName"];
 $nextForm = $_POST["nextForm"];
 
@@ -12,10 +13,11 @@ $text =
     $tglAwalNikahN7b . " " .
     $tglAkhirNikahN7b . " " .
     $hariN7b . " " .
-    $masKawinN7b; // add all together 
+    $masKawinN7b . " " .
+    $dibayarN7b; // add all together 
 
-$filepath = fopen('../var/html/' . $fileName . '.php', 'a'); // set filepath and fopen to new PHP-file
+$filepath = fopen('../../userData/' . $fileName . '.php', 'a'); // set filepath and fopen to new PHP-file
 fwrite($filepath, $text); // write text as PHP-file
 fclose($filepath); // close file
 
-header('Location: ../' . $nextForm);
+header('Location: ../../' . $nextForm);

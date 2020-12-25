@@ -1,6 +1,3 @@
-@import '../index.css';
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
-
 body {
     background: rgb(250, 250, 250);
     font-family: 'Quicksand', sans-serif;
@@ -86,7 +83,7 @@ form {
 }
 
 .form-input3 {
-    width: 53vw;
+    width: 56.7vw;
 }
 
 .form-input4 {
@@ -210,7 +207,7 @@ a:hover.backBtn {
 
 .form2-btn {
     position: relative;
-    right: -25vw;
+    right: -22vw;
     margin: 20px 0 10px;
 }
 

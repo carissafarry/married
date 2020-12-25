@@ -22,7 +22,7 @@ $text =
     $tanggalN6aMeninggal . " " .
     $tempatN6aMeninggal; // add all together 
 
-$filepath = fopen('../var/html/' . $fileName . '.php', 'a'); // set filepath and fopen to new PHP-file
+$filepath = fopen('../../userData/' . $fileName . '.php', 'a'); // set filepath and fopen to new PHP-file
 fwrite($filepath, $text); // write text as PHP-file
 fclose($filepath); // close file
 
