@@ -1,4 +1,6 @@
 @import './index.css';
+@import './Navbar/Navbar.css';
+@import './FormPage/Form.css';
 
 body {
     background-image: url('../img/done.gif');
