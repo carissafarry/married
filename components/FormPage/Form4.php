@@ -43,7 +43,7 @@ $goToHomeDir = '../../';
             <div class="note confirmation-form3">
                 <p>Demikianlah, formulir ini dipenuhi dengan mengingat sumpah jabatan dan untuk digunakan seperlunya.</p>
             </div>
-            <div class="form4-btn">
+            <div class="form3-btn">
                 <a class="backBtn" href="./Form3.php">Kembali</a>
                 <?php include './formBtn.php'; ?>
             </div>

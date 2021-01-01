@@ -33,7 +33,7 @@ $goToHomeDir = '../../';
             <div class="main-form">
                 <?php include './mainForm/mainForm1.php'; ?>
                 <div class="form1-btn">
-                    <a class="backBtn" href="./Form1.php">Kembali</a>
+                    <!-- <a class="backBtn" href="./Form1.php">Kembali</a> -->
                     <?php include './formBtn.php'; ?>
                 </div>
         </form>

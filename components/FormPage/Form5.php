@@ -42,7 +42,7 @@ $goToHomeDir = '../../';
             <div class="note confirmation-form3">
                 <p>Menyatakan formulir perizinan ini dipenuhi dengan kesadaran tanpa ada paksaan dari siapapun juga dan untuk dipergunakan seperlunya.</p>
             </div>
-            <div class="form4-btn">
+            <div class="form3-btn">
                 <a class="backBtn" href="./Form4.php">Kembali</a>
                 <?php include './formBtn.php'; ?>
             </div>

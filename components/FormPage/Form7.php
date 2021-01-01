@@ -44,7 +44,7 @@ $goToHomeDir = '../../';
                 <hr>
             </div>
             <?php include './mainForm/mainForm7c.php'; ?>
-            <div class="form1-btn">
+            <div class="form3-btn">
                 <a class="backBtn" href="./Form6.php">Kembali</a>
                 <?php include './formBtn.php'; ?>
             </div>

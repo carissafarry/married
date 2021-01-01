@@ -54,7 +54,7 @@
                         <input type="text" class="input-form" name="tanggalN6aMeninggal">
                     </div>
                 </div>
-                <div class="form-input">
+                <div class="form-input last-input">
                     <label for="" class="form-label">Di</label>
                     <div class="input-form-container">
                         <p>:</p>

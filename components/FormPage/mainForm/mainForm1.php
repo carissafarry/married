@@ -57,7 +57,7 @@
         </div>
         <div class="form-input status">
             <div class="status-label">
-                <label for="" class="form-label">Status perkawinan</label>
+                <label for="" class="form-label form1-label1">Status perkawinan</label>
                 <p class="titik-dua">:</p>
             </div>
             <p class="status-info">a. Jika pria, terangkan jejaka, duda atau beristri dan berapa istrinya</p>
@@ -67,7 +67,7 @@
             </div>
         </div>
         <div class="form-input">
-            <label for="" class="form-label">Nama Istri / Suami terdahulu</label>
+            <label for="" class="form-label form1-label2">Nama Istri / Suami terdahulu</label>
             <div class="input-form-container">
                 <p>:</p>
                 <input type="text" class="input-form" name="namaPasanganLamaN1">

@@ -99,11 +99,11 @@ form {
 }
 
 .form-input2 {
-    width: 40.3vw;
+    width: 41.5vw;
 }
 
 .form-input3 {
-    width: 56.7vw;
+    width: 57.8vw;
 }
 
 .form-input4 {
@@ -111,11 +111,19 @@ form {
 }
 
 .form-input5 {
-    width: 61.8vw;
+    width: 65.5vw;
 }
 
 .form-label {
     padding: 10px 0px 10px 15px;
+}
+
+.form1-label1 {
+    margin-right: -9px;
+}
+
+.form1-label2 {
+    margin-right: -17px;
 }
 
 .form7-label {
@@ -220,7 +228,7 @@ a:hover.backBtn {
 
 .form1-btn {
     position: relative;
-    left: 70vw;
+    left: 78vw;
     display: flex;
     margin-bottom: 20px;
 }
@@ -232,10 +240,6 @@ a:hover.backBtn {
 }
 
 .form3-btn {
-    float: right;
-}
-
-.form4-btn {
     float: right;
 }
 
