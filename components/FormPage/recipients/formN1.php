@@ -1,4 +1,5 @@
 <?php
+$nomorN1 = "\$nomorN1 = " . '"' . $_POST["nomorN1"] . '"' . ";";
 $kantorDesaN1 = "\$kantorDesaN1 = " . '"' . $_POST["kantorDesaN1"] . '"' . ";";
 $kecamatanN1 = "\$kecamatanN1 = " . '"' . $_POST["kecamatanN1"] . '"' . ";";
 $kotaN1 = "\$kotaN1 = " . '"' . $_POST["kotaN1"] . '"' . ";";
@@ -16,6 +17,7 @@ $fileName = $_POST["fileName"];
 $nextForm = $_POST["nextForm"];
 
 $text =
+    $nomorN1 . " " .
     $kantorDesaN1 . " " .
     $kecamatanN1 . " " .
     $kotaN1 . " " .
