@@ -35,6 +35,8 @@ $goToHomeDir = '../../';
         <form action="../FormPage/recipients/formN7.php" method="POST">
             <input type="hidden" name="fileName" value="<?= $_SESSION["user"] ?>">
             <input type="hidden" name="nextForm" value="Done.php">
+            <input type="hidden" name="nextForm" value="Form2.php">
+            <input type="hidden" name="completed" value="1">
             <?php include './mainForm/mainForm7a.php'; ?>
             <div class="hr">
                 <hr>

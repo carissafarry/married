@@ -3,6 +3,12 @@ session_start();
 if (!isset($_SESSION["user"])) {
     header("Location: ./LoginPage/Login.php");
     exit;
+} else {
+    require_once './userData/' . $_SESSION["user"] . '.php';
+    if ($completed != '1') {
+        header("Location: ./LoginPage/Login.php");
+        exit;
+    }
 }
 ?>
 

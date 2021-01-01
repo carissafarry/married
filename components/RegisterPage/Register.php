@@ -1,4 +1,9 @@
 <?php
+session_start();
+if (isset($_SESSION["user"])) {
+    header('Location: ../FormPage/Form1.php');
+    exit;
+}
 if (isset($_POST["register"])) {
     $username = "\$username = " . '"' . $_POST["username"] . '"' . ";";
     $password = "\$password = " . '"' . $_POST["password"] . '"' . ";";

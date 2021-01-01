@@ -5,6 +5,7 @@ $tglAkhirNikahN7b = "\$tglAkhirNikahN7b = " . '"' . $_POST["tglAkhirNikahN7b"] .
 $hariN7b = "\$hariN7b = " . '"' . $_POST["hariN7b"] . '"' . ";";
 $masKawinN7b = "\$masKawinN7b = " . '"' . $_POST["masKawinN7b"] . '"' . ";";
 $dibayarN7b = "\$dibayarN7b = " . '"' . $_POST["dibayarN7b"] . '"' . ";";
+$completed = $_POST["completed"];
 $fileName = $_POST["fileName"];
 $nextForm = $_POST["nextForm"];
 
